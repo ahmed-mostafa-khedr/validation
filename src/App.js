@@ -109,7 +109,6 @@ const Steps = (props) => {
           <Button
             onClick={() => setStep(step - 1)}
             variant="contained"
-            disabled={props.isSubmitting}
             color="warning"
           >
             {`< Back`}
@@ -120,8 +119,7 @@ const Steps = (props) => {
             type="submit"
             onClick={() => setStep(step + 1)}
             variant="contained"
-            disabled={props.isSubmitting}
-          >
+           >
             {`Next >`}
           </Button>
         )}
